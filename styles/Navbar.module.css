@@ -1,0 +1,38 @@
+.container {
+  background: linear-gradient(115deg, 
+  rgb(255, 255, 255) 39%, 
+  rgba(165, 165, 165, 0.5) 50%, 
+  rgba(81, 81, 81, 0.5));
+  border-bottom: 1px ridge black;
+}
+
+.bigText {
+  margin: 0;
+  margin-top: 4px;
+  padding: 0;
+  font-size: 56px;
+}
+
+.customFont {
+  font-family: 'Shalimar', cursive;
+}
+
+.navLinks > li:not(:last-child):hover {
+  transition-duration: 0.2s;
+  color: white;
+}
+
+.mobileNavLinks > li:hover {
+  transition-duration: 75ms;
+  color: green;
+}
+
+.removeBackground {
+  mix-blend-mode: color-burn;
+}
+
+
+
+
+/* FIGURE OUT HOW TO MAKE ALL LI HAVE TEXT EFFECT BUT EXCLUDE THE
+LAST LI WITH CSS 8 */ 

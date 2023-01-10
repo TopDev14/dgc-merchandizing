@@ -1,0 +1,27 @@
+.container {
+  width: auto;
+  height: 500px;
+  margin: 60px;
+  font-size: 22px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+/* .contactLinks > li:hover {
+  color: white;
+  transform: scale(1.03);
+  transition: all 150ms;
+} 
+
+.contactLinks > li {
+  transition-duration: 150ms;
+} */
+
+.socialLinks > li:hover {
+  transition: all 250ms;
+  transform: scale(1.2);
+}
+
+.socialLinks > li {
+  transition-duration: 250ms;
+}
