@@ -3,10 +3,10 @@ import { BiUpArrowAlt } from 'react-icons/bi'
 
 export default function Sponsors() {
   return (
-    <main className='pt-6'>
+    <main className='pt-6 h-screen bg-neutral-500'>
 
       {/* Sponsor Card */}
-      <div className='border-2 px-4 py-6 max-w-[486px] border-black w-[290px] sm:w-[480px] mx-auto h-auto rounded-lg shadow-2xl shadow-neutral-600 flex flex-col sm:flex-row'>
+      <div className='border-2 bg-white px-4 py-6 max-w-[486px] border-black w-[290px] sm:w-[480px] mx-auto h-auto rounded-lg shadow-2xl shadow-neutral-600 flex flex-col sm:flex-row'>
         {/* Sponsor Image */}
         <div className='my-auto mx-auto'>
           <Image

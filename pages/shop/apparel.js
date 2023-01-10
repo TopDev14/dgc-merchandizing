@@ -294,9 +294,7 @@ export default function Apparel({ productsList }) {
     return () => clearInterval(interval);
   }, []);
 
-  if (!timeLeft) {
-    return <div>Loading...</div>;
-  }
+  
 
   const seconds = Math.floor((timeLeft / 1000) % 60);
   const minutes = Math.floor((timeLeft / 1000 / 60) % 60);
@@ -304,9 +302,9 @@ export default function Apparel({ productsList }) {
 
   // Apply css for shop layout within className to main element
   return (
-    <main className={'bg- p-4 relative'}>
+    <main className={`p-4 relative text-white bg-neutral-800 ${s.bg}`}>
       {/* {loadProducts} */}
-      <div className='h-[81vh]'>
+      <div className='h-[98vh]'>
       <h1 className='text-3xl'>Coming soon...</h1> 
       <p className='text-2xl font-bold'>{hours} hours, {minutes} minutes, {seconds} seconds</p>
       </div>

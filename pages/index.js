@@ -18,9 +18,7 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  if (!timeLeft) {
-    return <div>Loading...</div>;
-  }
+  
 
   const seconds = Math.floor((timeLeft / 1000) % 60);
   const minutes = Math.floor((timeLeft / 1000 / 60) % 60);

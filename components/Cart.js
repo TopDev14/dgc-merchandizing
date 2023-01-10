@@ -20,7 +20,7 @@ export default function Cart({ toggleCartView, cartView }) {
       changeCartCount(cart.items.length)
     }
     fetchCart()
-  },[])
+  })
 
   return (
     <>
