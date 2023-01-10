@@ -38,7 +38,7 @@ export default function Home() {
       </Head>
 
       <main className="flex h-screen text-white">
-        {/* DGC */}
+        {/* DGC Slogan*/}
         <div className='w-full bg-black pt-8 md:p-16'>
           <button>
             <Link href='/shop/apparel'>
@@ -50,17 +50,19 @@ export default function Home() {
             </Link>
           </button>
 
+          <h2 className='text-green-400 pt-6 text-xl'>{hours} hours: {minutes} minutes: {seconds} seconds</h2>
+
+          {/* DGC Home Image */}
           <div className='relative'>
             <Image
               src='/images/Photo_T_1.png'
               width={300}
               height={0}
               alt='DGC Home Image'
-              className='mt-16 mx-auto'
+              className='mt-6 mx-auto'
               priority
             />
 
-            <h2 className='text-green-400 absolute right-8 top-1/2 text-xl'>{hours} hours: {minutes} minutes: {seconds} seconds</h2>
           </div>
 
         </div>
