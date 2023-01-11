@@ -4,8 +4,8 @@ import Image from 'next/image'
 export default function Terms() {
 
   const terms = {
-    Refunds: 'All purchases are finalized. No refunds or exchanges. If the item you recieved is not what you purchased, please contact us via email. We are not responsible for any damaged, stolen, or lost items.',
-    Shipping: 'We do NOT ship internationally. All orders are proccessed on the 12th and 27th of every month. Please allow 5-7 business days to recieve your order.'
+    Refunds: 'All purchases are finalized. No refunds or exchanges. If the item you received is not what you purchased, please contact us via email. We are not responsible for any damaged, stolen, or lost items.',
+    Shipping: 'We do NOT ship internationally. All orders are proccessed on the 12th and 27th of every month. Please allow 5-7 business days to receive your order.'
   }
 
   return (
