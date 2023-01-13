@@ -48,7 +48,7 @@ export default function Home() {
             </Link>
           </button>
 
-          <h2 className='text-green-400 pt-6 text-xl'>{hours} hours: {minutes} minutes: {seconds} seconds</h2>
+          <h2 className='text-green-400 pt-6 text-xl'>{hours} hours, {minutes} minutes, {seconds} seconds</h2>
 
           {/* DGC Home Image */}
           <div className='relative'>
