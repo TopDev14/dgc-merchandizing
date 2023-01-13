@@ -8,7 +8,7 @@ export default function Home() {
   const [timeLeft, setTimeLeft] = useState(null);
 
   useEffect(() => {
-    const deadline = new Date('2023-02-01T00:00:00');
+    const deadline = new Date("2023-02-01T14:00:00-05:00");
     const interval = setInterval(() => {
       const currentTime = new Date();
       const timeDiff = deadline - currentTime;
@@ -35,9 +35,9 @@ export default function Home() {
           content="The official DGC website where you can find all your DGC related apparel." />
       </Head>
 
-      <main className="flex h-screen text-white">
+      <main className="bg-black flex min-h-screen text-white">
         {/* DGC Slogan*/}
-        <div className='w-full bg-black pt-8 md:p-16'>
+        <div className='w-full pt-8 md:p-16'>
           <button>
             <Link href='/shop/apparel'>
               <h1 className={`text-bold text-5xl self-start inline`}>
@@ -55,7 +55,7 @@ export default function Home() {
             <Image
               src='/images/Photo_T_1.png'
               width={300}
-              height={0}
+              height={300}
               alt='DGC Home Image'
               className='mt-6 mx-auto'
               priority

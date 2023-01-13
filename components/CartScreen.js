@@ -139,8 +139,11 @@ export default function CartScreen({ toggleCartView, cartView }) {
         {/* Cart items display container */}
         <div className='h-auto grow mt-6 flex flex-col gap-4 overflow-y-auto'>
           {/* {itemsCartCards} */}
-          {/* ADD LOGIC TO THIS! */}
-          <p>Oopsies your cart is empty...</p>
+
+          {/* If nothing is in cart, display text */}
+          {cartDetails.items.length === 0 && 
+            <p>Oopsies your cart is empty...</p>
+          }
         </div>
 
         {/* Cart Summary Info */}

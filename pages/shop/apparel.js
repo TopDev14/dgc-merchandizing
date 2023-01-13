@@ -284,7 +284,7 @@ export default function Apparel({ productsList }) {
   const [timeLeft, setTimeLeft] = useState(null);
 
   useEffect(() => {
-    const deadline = new Date('2023-02-01T00:00:00');
+    const deadline = new Date("2023-02-01T14:00:00-05:00");
     const interval = setInterval(() => {
       const currentTime = new Date();
       const timeDiff = deadline - currentTime;
@@ -294,7 +294,7 @@ export default function Apparel({ productsList }) {
     return () => clearInterval(interval);
   }, []);
 
-  
+
 
   const seconds = Math.floor((timeLeft / 1000) % 60);
   const minutes = Math.floor((timeLeft / 1000 / 60) % 60);
@@ -302,12 +302,10 @@ export default function Apparel({ productsList }) {
 
   // Apply css for shop layout within className to main element
   return (
-    <main className={`p-4 relative text-white bg-neutral-800 ${s.bg}`}>
+    <main className={`p-4 relative text-white min-h-screen bg-neutral-800`}>
       {/* {loadProducts} */}
-      <div className='h-[98vh]'>
-      <h1 className='text-3xl'>Coming soon...</h1> 
-      <p className='text-2xl font-bold'>{hours} hours, {minutes} minutes, {seconds} seconds</p>
-      </div>
+      <h1 className='text-3xl font-semibold'>Coming soon...</h1>
+      <p className='text-2xl '>{hours} hours, {minutes} minutes, {seconds} seconds</p>
     </main>
   )
 }

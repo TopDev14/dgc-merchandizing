@@ -78,7 +78,6 @@ export default function Navbar({ toggleCartView, cartView }) {
           </li>
         </ul>
 
-        
       </nav>
     </nav>
   )

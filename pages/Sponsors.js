@@ -24,7 +24,7 @@ export default function Sponsors() {
             <a href='https://soundcloud.com/nightcrawlrrr?ref=clipboard&p=i&c=0&si=3818435E365B4227B91219BBBA149453&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing'>
               <Image
                 width={60}
-                height={0}
+                height={60}
                 src='/images/soundcloud-icon.png'
                 className='absolute left-9 top-3'
                 alt='soundcloud'
@@ -34,7 +34,7 @@ export default function Sponsors() {
             <a href='https://instagram.com/slxndxrmvnx?igshid=Zjc2ZTc4Nzk='>
               <Image
                 width={80}
-                height={0}
+                height={80}
                 src='/images/instagram-96.png'
                 className='absolute right-6'
                 alt='instagram'

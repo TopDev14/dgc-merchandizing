@@ -1,6 +1,6 @@
 import s from '../styles/Cart.module.css'
 import { CartCountManager } from '../components/Layout'
-import { useContext, useEffect } from 'react' 
+import { useContext, useEffect } from 'react'
 import swell from 'swell-js'
 
 export default function Cart({ toggleCartView, cartView }) {
@@ -9,22 +9,25 @@ export default function Cart({ toggleCartView, cartView }) {
   const manageCartCount = useContext(CartCountManager)
   const changeCartCount = manageCartCount.cartItemCount[1]
   let userCart = manageCartCount.cartItemCount[0]
- 
+
 
   useEffect(() => {
     const fetchCart = async () => {
-      const cart = await swell.cart.get()
-      if(cart === null) return
+      let cart
+      try {
+        cart = await swell.cart.get()
+        // Set the cart item counter to the length of items in cart
+        changeCartCount(cart.items.length)
+      } catch (e) { }
 
-      // Set the cart item counter to the length of items in cart
-      changeCartCount(cart.items.length)
+      if (cart === null) return
     }
     fetchCart()
   })
 
   return (
     <>
-    {/* When cart view is false */}
+      {/* When cart view is false */}
       <div className={`${cartView ? 'hidden' : 'h-12 self-center'}`}>
         {/*Cart Icon*/}
         <button onClick={toggleCartView} className='max-w-[40px] text-base relative '>
