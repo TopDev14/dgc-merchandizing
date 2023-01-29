@@ -8,7 +8,7 @@ export default function Home() {
   const [timeLeft, setTimeLeft] = useState(null);
 
   useEffect(() => {
-    const deadline = new Date("2023-02-01T14:00:00-05:00");
+    const deadline = new Date("2023-02-15T14:00:00-05:00");
     const interval = setInterval(() => {
       const currentTime = new Date();
       const timeDiff = deadline - currentTime;
