@@ -284,7 +284,7 @@ export default function Apparel({ productsList }) {
   const [timeLeft, setTimeLeft] = useState(null);
 
   useEffect(() => {
-    const deadline = new Date("2023-05-01T14:00:00-05:00");
+    const deadline = new Date("2023-03-01T14:00:00-05:00");
     const interval = setInterval(() => {
       const currentTime = new Date();
       const timeDiff = deadline - currentTime;
